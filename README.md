@@ -16,7 +16,7 @@ seaborn 0.9.0
 to install these packages simply run:
 pip install PACKAGENAME
 
-...
+---
 
 The goal of this framework is the creation of the Information Plane as introduced by the paper "Opening the Black Box of Deep Neural Networks via Information" by Ravid Shwartz-Ziv and
 Naftali Tishby (2017)
@@ -39,7 +39,7 @@ Example Jupyter Notebook files are provided illustrating the process
 To run the experiments for the two datastes simply run:
 python3 data_collection.py and python3 MNISTdata_collection.py or the relevant notebook.
 
-...
+---
 
 ## General Usage of the FrameWork
 
@@ -49,6 +49,7 @@ Steps for data collection:
 
 2. define model:
 e.g.:<br/>
+
          model = Sequential()<br/>
          model.add(InputLayer((x_train.shape[1],)))<br/>
          model.add(Dense(10))<br/>
@@ -59,14 +60,14 @@ e.g.:<br/>
          model.add(Dense(y_train.shape[1]))<br/>
          model.add(Activation("softmax"))
 
-         or load one of the predefined ones (archhitecture is predefined name)
-         e. g. model, architecture = model_selection.select_model(model_nr, nr_of_epochs, dataset_name, X_train.shape, y_train)
+   or load one of the predefined ones (archhitecture is predefined name)
+   e. g. model, architecture = model_selection.select_model(model_nr, nr_of_epochs, dataset_name, X_train.shape, y_train)
 
-         available model_nr: <br/>
-         model 1 = model with leading ReLU<br/>
-         model 2 = model with leading TanH<br/>
-         model 3 = full ReLU<br/>
-         model 4 = full TanH<br/>
+   available model_nr: <br/>
+   model 1 = model with leading ReLU<br/>
+   model 2 = model with leading TanH<br/>
+   model 3 = full ReLU<br/>
+   model 4 = full TanH<br/>
                                    ...
             
 3. define callback function:<br/>
