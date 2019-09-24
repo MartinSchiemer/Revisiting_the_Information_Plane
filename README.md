@@ -46,7 +46,8 @@ Steps for data collection:
     outputs = classes.Outputs()
 
 2. define model:
-    e.g. model = Sequential()
+e.g.:
+         model = Sequential()
          model.add(InputLayer((x_train.shape[1],)))
          model.add(Dense(10))
          model.add(Activation("tanh"))
@@ -56,13 +57,14 @@ Steps for data collection:
          model.add(Dense(y_train.shape[1]))
          model.add(Activation("softmax"))
 
-    or load one of the predefined ones (archhitecture is predefined name)
-    e. g. model, architecture = model_selection.select_model(model_nr, nr_of_epochs,
-                                                             dataset_name, X_train.shape, y_train)
-          available model_nr: e.g. model 1 = model with leading ReLU
-                                   model 2 = model with leading TanH
-                                   model 3 = full ReLU
-                                   model 4 = full TanH
+or load one of the predefined ones (archhitecture is predefined name)
+e. g. model, architecture = model_selection.select_model(model_nr, nr_of_epochs, dataset_name, X_train.shape, y_train)
+          
+available model_nr: 
+model 1 = model with leading ReLU
+model 2 = model with leading TanH
+model 3 = full ReLU
+model 4 = full TanH
                                    ...
             
 3. define callback function:
