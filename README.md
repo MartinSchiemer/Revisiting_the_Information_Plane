@@ -82,16 +82,16 @@ e.g.:<br/>
                                                                record_all_flag, rec_test_flag,
                                                                specific_records=[nr_of_epochs-1]))<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parameters: <br/>
-⋅⋅* outputs: output object
-⋅⋅* model: keras model
-⋅⋅* epoch: current epoch index (automatically put it dont change)
-⋅⋅* data_input: traning input data
-⋅⋅* x_test: test data input
-⋅⋅* y_test: test data output
-⋅⋅* batchsize: batch size for training
-⋅⋅* record_all_flag: flag that decides if all epochs are recorded ormreduced amount (full increases comput. complexity significantly)
-⋅⋅* rec_test_flag: flag that decides if intermediate test scores are recorded
-⋅⋅* specific_records: list of specific epochs that shoould be recorded
+* outputs: output object
+* model: keras model
+* epoch: current epoch index (automatically put it dont change)
+* data_input: traning input data
+* x_test: test data input
+* y_test: test data output
+* batchsize: batch size for training
+* record_all_flag: flag that decides if all epochs are recorded ormreduced amount (full increases comput. complexity significantly)
+* rec_test_flag: flag that decides if intermediate test scores are recorded
+* specific_records: list of specific epochs that shoould be recorded
                 
 4. define optimzer and compile model like in normal Keras
 
