@@ -49,6 +49,8 @@ To reproduce plots and values run:
 * early_stop_book.ipynb
 * nn_pruning.ipynb
 
+---
+
 ## General Usage of the Framework
 
 Look at Example_Usage.ipynb
