@@ -61,32 +61,37 @@ e.g.:<br/>
          model.add(Activation("softmax"))
 
    or load one of the predefined ones (archhitecture is predefined name)
-   e. g. model, architecture = model_selection.select_model(model_nr, nr_of_epochs, dataset_name, X_train.shape, y_train)
+   e. g. 
+   
+    model, architecture = model_selection.select_model(model_nr, nr_of_epochs, dataset_name, X_train.shape, y_train)
 
    available model_nr: <br/>
    model 1 = model with leading ReLU<br/>
    model 2 = model with leading TanH<br/>
    model 3 = full ReLU<br/>
    model 4 = full TanH<br/>
-                                   ...
+        .
+        .
+        .
             
 3. define callback function:<br/>
-    output_recording = LambdaCallback(on_epoch_end=lambda epoch,
+     
+         output_recording = LambdaCallback(on_epoch_end=lambda epoch,
                                    logs: Callbacks.record_activations(outputs, model, epoch,
                                                                X_train, X_test, y_test, batch,
                                                                record_all_flag, rec_test_flag,
                                                                specific_records=[nr_of_epochs-1]))<br/>
-    Parameters: outputs: output object<br/>
-                model: keras model<br/>
-                epoch: current epoch index (automatically put it dont change)<br/>
-                data_input: traning input data<br/>
-                x_test: test data input<br/>
-                y_test: test data output<br/>
-                batchsize: batch size for training<br/>
-                record_all_flag: flag that decides if all epochs are recorded or
+    Parameters: ⋅⋅* outputs: output object<br/>
+                ⋅⋅* model: keras model<br/>
+                ⋅⋅* epoch: current epoch index (automatically put it dont change)<br/>
+                ⋅⋅* data_input: traning input data<br/>
+                ⋅⋅* x_test: test data input<br/>
+                ⋅⋅* y_test: test data output<br/>
+                ⋅⋅* batchsize: batch size for training<br/>
+                ⋅⋅* record_all_flag: flag that decides if all epochs are recorded or
                                  reduced amount (full increases comput. complexity significantly)<br/>
-                rec_test_flag: flag that decides if intermediate test scores are recorded<br/>
-                specific_records: list of specific epochs that shoould be recorded<br/>   
+                ⋅⋅* rec_test_flag: flag that decides if intermediate test scores are recorded<br/>
+                ⋅⋅* specific_records: list of specific epochs that shoould be recorded<br/>   
                 
 4. define optimzer and compile model like in normal Keras
 
