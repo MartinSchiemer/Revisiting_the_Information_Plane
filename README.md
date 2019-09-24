@@ -41,7 +41,17 @@ python3 data_collection.py and python3 MNISTdata_collection.py or the relevant n
 
 ---
 
-## General Usage of the FrameWork
+## ICLR
+To reproduce plots and values run:
+* data_collection.py
+* Empty_Bins.ipynb
+* X_Y_Entropy_and_MI_comparison.ipynb
+* early_stop_book.ipynb
+* nn_pruning.ipynb
+
+## General Usage of the Framework
+
+Look at Example_Usage.ipynb
 
 Steps for data collection:
 1. define outputobject to store values
