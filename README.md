@@ -2,16 +2,16 @@
 
 ## Required Packages:
 
-numpy 1.16.4
-scipy 1.3.0
-matplotlib 3.1.0
-joblib 0.13.2
-cvxpy 1.0.24
-sklearn 0.0
-jupyter notebook
-tensorflow 1.13.1
-pprint 0.1
-seaborn 0.9.0
+* numpy 1.16.4
+* scipy 1.3.0
+* matplotlib 3.1.0
+* joblib 0.13.2
+* cvxpy 1.0.24
+* sklearn 0.0
+* jupyter notebook
+* tensorflow 1.13.1
+* pprint 0.1
+* seaborn 0.9.0
 
 to install these packages simply run:
 pip install PACKAGENAME
